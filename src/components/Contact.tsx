@@ -58,21 +58,21 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-blue-600 mt-1" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Email</h3>
-                  <p className="mt-1 text-gray-600">your.email@example.com</p>
+                  <p className="mt-1 text-gray-600">victor.brouwer@hotmail.com</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <Phone className="w-6 h-6 text-blue-600 mt-1" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-                  <p className="mt-1 text-gray-600">+1 (555) 123-4567</p>
+                  <p className="mt-1 text-gray-600">+31 (6) 33148662</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <MapPin className="w-6 h-6 text-blue-600 mt-1" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Location</h3>
-                  <p className="mt-1 text-gray-600">San Francisco, CA</p>
+                  <p className="mt-1 text-gray-600">Amsterdam, Netherlands</p>
                 </div>
               </div>
             </div>
