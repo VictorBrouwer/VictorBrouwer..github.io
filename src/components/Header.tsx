@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin } from 'lucide-react';
+import profilePic from '/src/assets/images/profile-pic.jpeg';
 
 const Header = () => {
   return (
@@ -8,11 +9,10 @@ const Header = () => {
         <div className="flex items-center justify-center gap-8">
           {/* Profile Picture */}
           <img 
-            src="/src/assets/images/profile-pic.jpeg"
-            alt="Victor Brouwer"
-            className="w-32 h-32 rounded-full object-cover border-4 border-primary"
+            src={profilePic}
+           alt="Victor Brouwer"
+          className="w-32 h-32 rounded-full object-cover border-4 border-primary"
           />
-          
           <div className="text-left">
             <h1 className="text-4xl font-bold text-primary mb-2">Victor Brouwer</h1>
             <p className="text-xl text-secondary">Data Scientist & Developer</p>

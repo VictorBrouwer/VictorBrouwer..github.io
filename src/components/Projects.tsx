@@ -1,11 +1,12 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import pongThumbnail from '../assets/images/pong-thumbnail.png';
 
 const projects = [
   {
     title: 'Online Pong Game',
     description: 'This project involves the creation of a fully functional single page application website where users can play Pong with each other, in real-time. The application includes user authentication, a chat room, and a live multiplayer Pong game.',
-    image: 'src/assets/images/pong-thumbnail.png',
+    image: pongThumbnail,
     technologies: ['React', 'Node.js', 'PostgreSQL', 'TypeScript', 'Next.js', 'Tailwind'],
     githubUrl: 'https://github.com/dickklouwer/transcendence',
     liveUrl: 'https://example.com'
