@@ -4,26 +4,12 @@ import profilePic from '/src/assets/images/profile-pic.jpeg';
 
 const Header = () => {
   return (
-    <header className="w-full max-w-3xl mx-auto px-4 py-10">
+    <header className="w-full max-w-6xl mx-auto px-4 py-6">
       <div className="bg-card rounded-lg shadow-lg p-8">
-        <div className="flex items-center justify-center gap-8">
-          {/* Profile Picture */}
-          <img 
-            src={profilePic}
-           alt="Victor Brouwer"
-          className="w-32 h-32 rounded-full object-cover border-4 border-primary"
-          />
-          <div className="text-left">
-            <h1 className="text-4xl font-bold text-primary mb-2">Victor Brouwer</h1>
-            <p className="text-xl text-secondary">Data Scientist & Developer</p>
-          </div>
-        </div>
-
-        {/* Navigation */}
-        <nav className="mt-8">
-          <ul className="flex justify-center space-x-6">
+        <nav className="mb-8">
+          <ul className="flex justify-center space-x-8">
             <li>
-              <a href="#about" className="text-primary hover:text-secondary transition-colors">
+              <a href="#about" className="text-primary hover:text-secondary transition-colors text-lg">
                 About
               </a>
             </li>
@@ -49,6 +35,18 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+
+        <div className="flex items-center justify-center gap-12">
+          <img 
+            src={profilePic}
+            alt="Victor Brouwer"
+            className="w-40 h-40 rounded-full object-cover border-4 border-primary"
+          />
+          <div className="text-left">
+            <h1 className="text-5xl font-bold text-primary mb-3">Victor Brouwer</h1>
+            <p className="text-2xl text-secondary">Data Scientist & Developer</p>
+          </div>
+        </div>
         
         <div className="mt-6 flex justify-center space-x-4">
           <a 

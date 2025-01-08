@@ -21,10 +21,10 @@ const EducationCard = ({ edu }: { edu: any }) => (
     icon={
       <div className="flex justify-center items-center w-full h-full">
         <img
-          src={`src/assets/images/${edu.logo}`}
+          src={edu.logo}
           alt={edu.institution}
           className={`${
-            edu.logo === 'codam-logo.png' || edu.logo === 'uu-logo.png'
+            edu.institution === 'Codam Coding College' || edu.institution === 'University of Utrecht'
               ? 'w-[80%] h-[80%]'
               : 'w-[60%] h-[60%]'
           } object-contain`}
@@ -76,7 +76,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-orange-700">
+    <section id="education" className="py-20">
       <div className="container mx-auto px-4">
         <div className="py-10">
           <h2 className="text-4xl font-bold text-center mb-8">Education</h2>
