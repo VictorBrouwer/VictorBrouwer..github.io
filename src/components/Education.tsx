@@ -16,11 +16,14 @@ const EducationCard = ({ edu }: { edu: any }) => (
     iconStyle={{ background: "#ea580c" }}
     icon={
       <div className="flex justify-center items-center w-full h-full">
-        {/* You can add institution logos here if available */}
         <img
-          src="/education-icon.png"  // Add a default education icon
+          src={`src/assets/images/${edu.logo}`}
           alt={edu.institution}
-          className="w-[60%] h-[60%] object-contain"
+          className={`${
+            edu.logo === 'codam-logo.png' || edu.logo === 'uu-logo.png'
+              ? 'w-[80%] h-[80%]'
+              : 'w-[60%] h-[60%]'
+          } object-contain`}
         />
       </div>
     }
@@ -44,30 +47,36 @@ const Education = () => {
     {
       degree: "Master's in Data Science",
       institution: "University of Amsterdam",
-      period: "2024 – 2025"
+      period: "2024 – 2025",
+      logo: "uva-logo.svg"
     },
     {
       degree: "Core Program",
       institution: "Codam Coding College",
-      period: "2022 – 2024"
+      period: "2022 – 2024",
+      logo: "codam-logo.png"
     },
     {
       degree: "Master's in Artificial Intelligence (Pre-Master's included)",
       institution: "University of Utrecht",
-      period: "2021 – 2022"
+      period: "2021 – 2022",
+      logo: "uu-logo.png"
     },
     {
       degree: "Bachelor's in Liberal Arts and Sciences",
       institution: "University College Utrecht",
       period: "2018 – 2021",
-      major: "Major: Economics & Chemistry"
+      major: "Major: Economics & Chemistry",
+      logo: "ucu-logo.png"
     }
   ];
 
   return (
     <section id="education" className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-orange-700">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center text-orange-500">Education</h2>
+        <div className="py-10">
+          <h2 className="text-4xl font-bold text-center mb-8">Education</h2>
+        </div>
         
         <VerticalTimeline>
           {education.map((edu, index) => (

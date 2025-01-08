@@ -32,9 +32,9 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-orange-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-orange-500">Projects</h2>
-          <p className="mt-4 text-xl text-orange-600">Here are some of my recent works</p>
+        <div className="py-10">
+          <h2 className="text-4xl font-bold text-center mb-8">Projects</h2>
+          <p className="mt-4 text-xl text-orange-600 text-center mx-auto">Here are some of my recent works</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

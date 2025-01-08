@@ -1,8 +1,10 @@
 const Experience = () => {
   return (
-    <section id="education" className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-orange-700">
+    <section id="experience" className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-orange-700">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-white text-center">Experience</h2>
+        <div className="py-10">
+          <h2 className="text-4xl font-bold text-center mb-8">Experience</h2>
+        </div>
         
         <div className="flex justify-center">
           <div className="grid gap-6 max-w-3xl w-full">

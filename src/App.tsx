@@ -9,12 +9,14 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="min-h-screen py-10 font-courier bg-gradient-to-br from-primary to-secondary">
-      <Header />
-      <About />
-      <Projects />
-      <Education />
-      <Experience />
-      <Contact />
+      <div className="container mx-auto px-4 bg-white/10 backdrop-blur-sm rounded-lg shadow-lg">
+        <Header />
+        <About />
+        <Projects />
+        <Education />
+        <Experience />
+        <Contact />
+      </div>
     </div>
   );
 }

@@ -3,11 +3,10 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-orange-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900">Get In Touch</h2>
-          <p className="mt-4 text-xl text-gray-600">Let's work together on your next project</p>
+        <div className="py-10">
+          <h2 className="text-4xl font-bold text-center mb-8">Contact</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -45,7 +44,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors"
+                className="w-full bg-orange-600 text-white py-3 px-6 rounded-md hover:bg-orange-700 transition-colors"
               >
                 Send Message
               </button>
@@ -55,21 +54,21 @@ const Contact = () => {
           <div className="bg-white rounded-lg shadow-lg p-8">
             <div className="space-y-8">
               <div className="flex items-start">
-                <Mail className="w-6 h-6 text-blue-600 mt-1" />
+                <Mail className="w-6 h-6 text-orange-600 mt-1" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Email</h3>
                   <p className="mt-1 text-gray-600">victor.brouwer@hotmail.com</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <Phone className="w-6 h-6 text-blue-600 mt-1" />
+                <Phone className="w-6 h-6 text-orange-600 mt-1" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Phone</h3>
                   <p className="mt-1 text-gray-600">+31 (6) 33148662</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <MapPin className="w-6 h-6 text-blue-600 mt-1" />
+                <MapPin className="w-6 h-6 text-orange-600 mt-1" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Location</h3>
                   <p className="mt-1 text-gray-600">Amsterdam, Netherlands</p>
